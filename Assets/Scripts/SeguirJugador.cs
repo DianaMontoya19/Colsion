@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class SeguirJugador : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Jugador;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.position = Jugador.transform.position + new Vector3(0f,1f,-2.3f);
     }
 }
